@@ -553,6 +553,7 @@ body > div:hover {
   width: 24px;
   height: 18px;
   border: 1px solid #888;
+  background-color: #fff;
   overflow: hidden;
 }
 #mail > div:before {
@@ -585,4 +586,64 @@ body > div:hover {
       -ms-transform: rotateZ(-45deg);
        -o-transform: rotateZ(-45deg);
           transform: rotateZ(-45deg);
+}
+
+/* ========================= */
+#play {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#play:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-left: 15px solid #888;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+/* ========================= */
+#pause {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#pause:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 8px;
+  height: 20px;
+  border-left: 3px solid #888;
+  border-right: 3px solid #888;
+}
+
+/* ========================= */
+#stop {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#stop:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 17px;
+  height: 17px;
+  background-color: #888;
 }
