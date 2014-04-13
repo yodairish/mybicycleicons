@@ -905,3 +905,45 @@ body > div:hover {
   background-color: #888;
   -webkit-transform: rotateZ(-45deg); 
 }
+
+/* ========================= */
+#search {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#search:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 3px solid #888;
+  border-radius: 50%;
+  -webkit-transform: translate(-2px, -2px);
+     -moz-transform: translate(-2px, -2px);
+      -ms-transform: translate(-2px, -2px);
+       -o-transform: translate(-2px, -2px);
+          transform: translate(-2px, -2px);
+}
+#search:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 3px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #888;
+  -webkit-transform: rotateZ(45deg) translateX(8px);
+     -moz-transform: rotateZ(45deg) translateX(8px);
+      -ms-transform: rotateZ(45deg) translateX(8px);
+       -o-transform: rotateZ(45deg) translateX(8px);
+          transform: rotateZ(45deg) translateX(8px);
+}
