@@ -1,6 +1,7 @@
 * {padding: 0; margin: 0;}
 html, body {width: 100%; height: 100%;}
 
+/* genral styles just for this examples */
 body > div {
   width: 40px;
   height: 40px;
@@ -13,12 +14,14 @@ body > div:hover {
   cursor: pointer;
   background-color: #eee;
 }
-#leftPage {
+
+/* ========================= */
+#prevItem {
   width: 40px;
   height: 40px;
   position: relative;
 }
-#leftPage:before {
+#prevItem:before {
   content: "";
   position: absolute;
   width: 15px;
@@ -31,14 +34,19 @@ body > div:hover {
   right: 0;
   margin: auto;
   -webkit-transform: rotateZ(-45deg) skew(10deg, 10deg) translate(3px,3px);
+     -moz-transform: rotateZ(-45deg) skew(10deg, 10deg) translate(3px,3px);
+      -ms-transform: rotateZ(-45deg) skew(10deg, 10deg) translate(3px,3px);
+       -o-transform: rotateZ(-45deg) skew(10deg, 10deg) translate(3px,3px);
+          transform: rotateZ(-45deg) skew(10deg, 10deg) translate(3px,3px);
 }
 
-#rightPage {
+/* ========================= */
+#nextItem {
   width: 40px;
   height: 40px;
   position: relative;
 }
-#rightPage:before {
+#nextItem:before {
   content: "";
   position: absolute;
   width: 15px;
@@ -51,14 +59,19 @@ body > div:hover {
   right: 0;
   margin: auto;
   -webkit-transform: rotateZ(45deg) skew(-10deg, -10deg) translate(-3px, 3px);
+     -moz-transform: rotateZ(45deg) skew(-10deg, -10deg) translate(-3px, 3px);
+      -ms-transform: rotateZ(45deg) skew(-10deg, -10deg) translate(-3px, 3px);
+       -o-transform: rotateZ(45deg) skew(-10deg, -10deg) translate(-3px, 3px);
+          transform: rotateZ(45deg) skew(-10deg, -10deg) translate(-3px, 3px);
 }
 
-#firstPage {
+/* ========================= */
+#firstItem {
   width: 40px;
   height: 40px;
   position: relative;
 }
-#firstPage:before {
+#firstItem:before {
   content: "";
   position: absolute;
   width: 10px;
@@ -71,8 +84,12 @@ body > div:hover {
   right: 0;
   margin: auto;
   -webkit-transform: rotateZ(-45deg) skew(10deg, 10deg);
+     -moz-transform: rotateZ(-45deg) skew(10deg, 10deg);
+      -ms-transform: rotateZ(-45deg) skew(10deg, 10deg);
+       -o-transform: rotateZ(-45deg) skew(10deg, 10deg);
+          transform: rotateZ(-45deg) skew(10deg, 10deg);
 }
-#firstPage:after {
+#firstItem:after {
   content: "";
   position: absolute;
   width: 10px;
@@ -85,14 +102,19 @@ body > div:hover {
   right: 0;
   margin: auto;
   -webkit-transform: rotateZ(-45deg) skew(10deg, 10deg) translate(4px, 4px);
+     -moz-transform: rotateZ(-45deg) skew(10deg, 10deg) translate(4px, 4px);
+      -ms-transform: rotateZ(-45deg) skew(10deg, 10deg) translate(4px, 4px);
+       -o-transform: rotateZ(-45deg) skew(10deg, 10deg) translate(4px, 4px);
+          transform: rotateZ(-45deg) skew(10deg, 10deg) translate(4px, 4px);
 }
 
-#lastPage {
+/* ========================= */
+#lastItem {
   width: 40px;
   height: 40px;
   position: relative;
 }
-#lastPage:before {
+#lastItem:before {
   content: "";
   position: absolute;
   width: 10px;
@@ -105,8 +127,12 @@ body > div:hover {
   right: 0;
   margin: auto;
   -webkit-transform: rotateZ(45deg) skew(-10deg, -10deg);
+     -moz-transform: rotateZ(45deg) skew(-10deg, -10deg);
+      -ms-transform: rotateZ(45deg) skew(-10deg, -10deg);
+       -o-transform: rotateZ(45deg) skew(-10deg, -10deg);
+          transform: rotateZ(45deg) skew(-10deg, -10deg);
 }
-#lastPage:after {
+#lastItem:after {
   content: "";
   position: absolute;
   width: 10px;
@@ -119,12 +145,31 @@ body > div:hover {
   right: 0;
   margin: auto;
   -webkit-transform: rotateZ(45deg) skew(-10deg, -10deg) translate(-4px, 4px);
+     -moz-transform: rotateZ(45deg) skew(-10deg, -10deg) translate(-4px, 4px);
+      -ms-transform: rotateZ(45deg) skew(-10deg, -10deg) translate(-4px, 4px);
+       -o-transform: rotateZ(45deg) skew(-10deg, -10deg) translate(-4px, 4px);
+          transform: rotateZ(45deg) skew(-10deg, -10deg) translate(-4px, 4px);
 }
 
+/* ========================= */
 @-webkit-keyframes spinningAnim {
-  0% { -webkit-transform: translateZ(0) rotateZ(0deg); }
-  100% { -webkit-transform: translateZ(0) rotateZ(360deg); }
+  0% {
+    -webkit-transform: translateZ(0) rotateZ(0deg);
+       -moz-transform: translateZ(0) rotateZ(0deg);
+        -ms-transform: translateZ(0) rotateZ(0deg);
+         -o-transform: translateZ(0) rotateZ(0deg);
+            transform: translateZ(0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateZ(360deg);
+       -moz-transform: translateZ(0) rotateZ(360deg);
+        -ms-transform: translateZ(0) rotateZ(360deg);
+         -o-transform: translateZ(0) rotateZ(360deg);
+            transform: translateZ(0) rotateZ(360deg);
+  }
 }
+/* ========================= */
+/* Animation on preudo elements works only on chrome, ff and mb IE10+ */
 #loading {
   width: 40px;
   height: 40px;
@@ -159,8 +204,13 @@ body > div:hover {
   border-right-color: #2BAC2B;
   border-bottom-color: #CAB831;
   -webkit-animation: spinningAnim linear 1s 0 infinite;
+     -moz-animation: spinningAnim linear 1s 0 infinite;
+       -o-animation: spinningAnim linear 1s 0 infinite;
+          animation: spinningAnim linear 1s 0 infinite;
 }
 
+/* ========================= */
+/* Same spinner, but this time without animate preudo element */
 #loading2 {
   width: 40px;
   height: 40px;
@@ -194,14 +244,18 @@ body > div:hover {
   border-right-color: #2BAC2B;
   border-bottom-color: #CAB831;
   -webkit-animation: spinningAnim linear 1s 0 infinite;
+     -moz-animation: spinningAnim linear 1s 0 infinite;
+       -o-animation: spinningAnim linear 1s 0 infinite;
+          animation: spinningAnim linear 1s 0 infinite;
 }
 
-#previews {
+/* ========================= */
+#itemList {
   width: 40px;
   height: 40px;
   position: relative;
 }
-#previews>div:first-child {
+#itemList>div:first-child {
   position: absolute;
   width: 7px;
   height: 7px;
@@ -212,8 +266,12 @@ body > div:hover {
   right: 0;
   margin: auto;
   -webkit-transform: translate(-6px,-6px);
+     -moz-transform: translate(-6px,-6px);
+      -ms-transform: translate(-6px,-6px);
+       -o-transform: translate(-6px,-6px);
+          transform: translate(-6px,-6px);
 }
-#previews>div:first-child:before {
+#itemList>div:first-child:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -222,7 +280,7 @@ body > div:hover {
   right: -12px;
   background-color: #888;
 }
-#previews>div:last-child {
+#itemList>div:last-child {
   position: absolute;
   width: 7px;
   height: 7px;
@@ -233,8 +291,12 @@ body > div:hover {
   right: 0;
   margin: auto;
   -webkit-transform: translate(-6px, 6px);
+     -moz-transform: translate(-6px, 6px);
+      -ms-transform: translate(-6px, 6px);
+       -o-transform: translate(-6px, 6px);
+          transform: translate(-6px, 6px);
 }
-#previews>div:last-child:before {
+#itemList>div:last-child:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -244,12 +306,13 @@ body > div:hover {
   background-color: #888;
 }
 
-#mobileSlides {
+/* ========================= */
+#changeWindow {
   width: 40px;
   height: 40px;
   position: relative;
 }
-#mobileSlides:before {
+#changeWindow:before {
   content: "";
   width: 12px;
   height: 16px;
@@ -263,8 +326,12 @@ body > div:hover {
   right: 0;
   margin: auto;
   -webkit-transform: translate(-2px, -2px);
+     -moz-transform: translate(-2px, -2px);
+      -ms-transform: translate(-2px, -2px);
+       -o-transform: translate(-2px, -2px);
+          transform: translate(-2px, -2px);
 }
-#mobileSlides:after {
+#changeWindow:after {
   content: ""; 
   width: 12px;
   height: 16px; 
@@ -278,14 +345,19 @@ body > div:hover {
   right: 0;
   margin: auto;
   -webkit-transform: translate(1px, 1px);
+     -moz-transform: translate(1px, 1px);
+      -ms-transform: translate(1px, 1px);
+       -o-transform: translate(1px, 1px);
+          transform: translate(1px, 1px);
 }
 
-#closeButton {
+/* ========================= */
+#close {
   width: 40px;
   height: 40px;
   position: relative;
 }
-#closeButton:before {
+#close:before {
   content: "";
   position: absolute;
   width: 10px;
@@ -298,8 +370,12 @@ body > div:hover {
   right: 0;
   margin: auto;
   -webkit-transform: rotateZ(-45deg) translate(5px,5px);
+     -moz-transform: rotateZ(-45deg) translate(5px,5px);
+      -ms-transform: rotateZ(-45deg) translate(5px,5px);
+       -o-transform: rotateZ(-45deg) translate(5px,5px);
+          transform: rotateZ(-45deg) translate(5px,5px);
 }
-#closeButton:after {
+#close:after {
   content: "";
   position: absolute;
   width: 10px;
@@ -312,8 +388,13 @@ body > div:hover {
   right: 0;
   margin: auto;
   -webkit-transform: rotateZ(45deg) translate(-5px,5px);
+     -moz-transform: rotateZ(45deg) translate(-5px,5px);
+      -ms-transform: rotateZ(45deg) translate(-5px,5px);
+       -o-transform: rotateZ(45deg) translate(-5px,5px);
+          transform: rotateZ(45deg) translate(-5px,5px);
 }
 
+/* ========================= */
 #list {
   width: 40px;
   height: 40px;
@@ -343,17 +424,25 @@ body > div:hover {
 }
 #list > div:first-child {
   -webkit-transform: translateY(-6px);
+     -moz-transform: translateY(-6px);
+      -ms-transform: translateY(-6px);
+       -o-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 #list > div:last-child {
   -webkit-transform: translateY(6px);
+     -moz-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+       -o-transform: translateY(6px);
+          transform: translateY(6px);
 }
 
+/* ========================= */
 #sandwich {
   width: 40px;
   height: 40px;
   position: relative;
 }
-
 #sandwich:before {
   content: "";
   position: absolute;
@@ -380,6 +469,7 @@ body > div:hover {
   border-bottom: 3px solid #888;
 }
 
+/* ========================= */
 #fullScreen {
   width: 40px;
   height: 40px;
@@ -395,6 +485,10 @@ body > div:hover {
   width: 1px;
   height: 1px;
   -webkit-transform: translate(-10px, -10px);
+     -moz-transform: translate(-10px, -10px);
+      -ms-transform: translate(-10px, -10px);
+       -o-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
 }
 #fullScreen > div:before {
   content: "";
@@ -403,8 +497,11 @@ body > div:hover {
   height: 7px;
   border-left: 2px solid #888;
   border-top: 2px solid #888;
-
   -webkit-transform: skew(10deg, 10deg);
+     -moz-transform: skew(10deg, 10deg);
+      -ms-transform: skew(10deg, 10deg);
+       -o-transform: skew(10deg, 10deg);
+          transform: skew(10deg, 10deg);
 }
 #fullScreen > div:after {
   content: "";
@@ -413,13 +510,29 @@ body > div:hover {
   height: 2px;
   background-color: #888;
   -webkit-transform: rotateZ(45deg) translate(2px, 3px);
+     -moz-transform: rotateZ(45deg) translate(2px, 3px);
+      -ms-transform: rotateZ(45deg) translate(2px, 3px);
+       -o-transform: rotateZ(45deg) translate(2px, 3px);
+          transform: rotateZ(45deg) translate(2px, 3px);
 }
 #fullScreen > div:nth-child(2) {
   -webkit-transform: rotateZ(90deg) translate(-10px, -10px);
+     -moz-transform: rotateZ(90deg) translate(-10px, -10px);
+      -ms-transform: rotateZ(90deg) translate(-10px, -10px);
+       -o-transform: rotateZ(90deg) translate(-10px, -10px);
+          transform: rotateZ(90deg) translate(-10px, -10px);
 }
 #fullScreen > div:nth-child(3) {
   -webkit-transform: rotateZ(180deg) translate(-10px, -10px);
+     -moz-transform: rotateZ(180deg) translate(-10px, -10px);
+      -ms-transform: rotateZ(180deg) translate(-10px, -10px);
+       -o-transform: rotateZ(180deg) translate(-10px, -10px);
+          transform: rotateZ(180deg) translate(-10px, -10px);
 }
 #fullScreen > div:nth-child(4) {
   -webkit-transform: rotateZ(270deg) translate(-10px, -10px);
+     -moz-transform: rotateZ(270deg) translate(-10px, -10px);
+      -ms-transform: rotateZ(270deg) translate(-10px, -10px);
+       -o-transform: rotateZ(270deg) translate(-10px, -10px);
+          transform: rotateZ(270deg) translate(-10px, -10px);
 }
