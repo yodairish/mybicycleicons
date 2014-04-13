@@ -812,3 +812,63 @@ body > div:hover {
   border-top: 3px solid #888;
   border-radius: 50%;
 }
+
+/* ========================= */
+#sharing {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#sharing:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-left: 3px solid #888;
+  border-top: 3px solid #888;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: rotateZ(-45deg) skew(20deg, 20deg) translate(3px,3px);
+     -moz-transform: rotateZ(-45deg) skew(20deg, 20deg) translate(3px,3px);
+      -ms-transform: rotateZ(-45deg) skew(20deg, 20deg) translate(3px,3px);
+       -o-transform: rotateZ(-45deg) skew(20deg, 20deg) translate(3px,3px);
+          transform: rotateZ(-45deg) skew(20deg, 20deg) translate(3px,3px);
+}
+#sharing > div {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #888;
+  border-radius: 50%;
+  -webkit-transform: translateX(-9px);
+}
+#sharing > div:before {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: -7px;
+  left: 15px;
+  margin: auto;
+  background-color: #888;
+  border-radius: 50%;
+}
+#sharing > div:after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 7px;
+  left: 15px;
+  margin: auto;
+  background-color: #888;
+  border-radius: 50%;
+}
