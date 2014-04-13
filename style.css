@@ -947,3 +947,81 @@ body > div:hover {
        -o-transform: rotateZ(45deg) translateX(8px);
           transform: rotateZ(45deg) translateX(8px);
 }
+
+/* ========================= */
+#previous {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#previous:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 8px;
+  border-right: 3px solid #888;
+  border-top: 3px solid #888;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#previous:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 10px solid #888;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translate(-8px, -4px);
+     -moz-transform: translate(-8px, -4px);
+      -ms-transform: translate(-8px, -4px);
+       -o-transform: translate(-8px, -4px);
+          transform: translate(-8px, -4px);
+}
+
+/* ========================= */
+#forward {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#forward:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 8px;
+  border-left: 3px solid #888;
+  border-top: 3px solid #888;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#forward:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #888;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translate(8px, -4px);
+     -moz-transform: translate(8px, -4px);
+      -ms-transform: translate(8px, -4px);
+       -o-transform: translate(8px, -4px);
+          transform: translate(8px, -4px);
+}
