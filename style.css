@@ -9,13 +9,10 @@ body > div {
   margin: 15px;
   position: relative;
 }
-<<<<<<< HEAD
-=======
 body > div:hover {
   cursor: pointer;
   background-color: #eee;
 }
->>>>>>> master
 #leftPage {
   width: 40px;
   height: 40px;
@@ -381,8 +378,6 @@ body > div:hover {
   margin: auto;
   border-top: 3px solid #888;
   border-bottom: 3px solid #888;
-<<<<<<< HEAD
-=======
 }
 
 #fullScreen {
@@ -427,5 +422,4 @@ body > div:hover {
 }
 #fullScreen > div:nth-child(4) {
   -webkit-transform: rotateZ(270deg) translate(-10px, -10px);
->>>>>>> master
 }
