@@ -9,6 +9,13 @@ body > div {
   margin: 15px;
   position: relative;
 }
+<<<<<<< HEAD
+=======
+body > div:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+>>>>>>> master
 #leftPage {
   width: 40px;
   height: 40px;
@@ -374,4 +381,51 @@ body > div {
   margin: auto;
   border-top: 3px solid #888;
   border-bottom: 3px solid #888;
+<<<<<<< HEAD
+=======
+}
+
+#fullScreen {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#fullScreen > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1px;
+  height: 1px;
+  -webkit-transform: translate(-10px, -10px);
+}
+#fullScreen > div:before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-left: 2px solid #888;
+  border-top: 2px solid #888;
+
+  -webkit-transform: skew(10deg, 10deg);
+}
+#fullScreen > div:after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 2px;
+  background-color: #888;
+  -webkit-transform: rotateZ(45deg) translate(2px, 3px);
+}
+#fullScreen > div:nth-child(2) {
+  -webkit-transform: rotateZ(90deg) translate(-10px, -10px);
+}
+#fullScreen > div:nth-child(3) {
+  -webkit-transform: rotateZ(180deg) translate(-10px, -10px);
+}
+#fullScreen > div:nth-child(4) {
+  -webkit-transform: rotateZ(270deg) translate(-10px, -10px);
+>>>>>>> master
 }
