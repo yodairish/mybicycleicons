@@ -849,6 +849,10 @@ body > div:hover {
   background-color: #888;
   border-radius: 50%;
   -webkit-transform: translateX(-9px);
+     -moz-transform: translateX(-9px);
+      -ms-transform: translateX(-9px);
+       -o-transform: translateX(-9px);
+          transform: translateX(-9px);
 }
 #sharing > div:before {
   content: '';
@@ -903,7 +907,11 @@ body > div:hover {
   right: 0;
   margin: auto;
   background-color: #888;
-  -webkit-transform: rotateZ(-45deg); 
+  -webkit-transform: rotateZ(-45deg);
+     -moz-transform: rotateZ(-45deg);
+      -ms-transform: rotateZ(-45deg);
+       -o-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
 }
 
 /* ========================= */
@@ -1182,6 +1190,10 @@ body > div:hover {
   height: 3px;
   background-color: #888;
   -webkit-transform: translateY(12px);
+     -moz-transform: translateY(12px);
+      -ms-transform: translateY(12px);
+       -o-transform: translateY(12px);
+          transform: translateY(12px);
 }
 #mic:after {
   content: '';
@@ -1194,6 +1206,10 @@ body > div:hover {
   width: 3px; 
   height: 5px; background-color: #888;
   -webkit-transform: translateY(8px);
+     -moz-transform: translateY(8px);
+      -ms-transform: translateY(8px);
+       -o-transform: translateY(8px);
+          transform: translateY(8px);
 }
 #mic > div {
   position: absolute;
@@ -1207,6 +1223,10 @@ body > div:hover {
   background-color: #888;
   border-radius: 40%;
   -webkit-transform: translateY(-7px);
+     -moz-transform: translateY(-7px);
+      -ms-transform: translateY(-7px);
+       -o-transform: translateY(-7px);
+          transform: translateY(-7px);
 }
 #mic > div:before {
   position: absolute; 
@@ -1220,4 +1240,47 @@ body > div:hover {
   border-bottom: 3px solid #888;
   border-radius: 0% 0% 50% 50%;
   border-top-color: transparent;
+}
+
+/* ========================= */
+#chat {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#chat:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 23px;
+  height: 17px;
+  background-color: #888;
+  border-radius: 50%;
+  -webkit-transform: translateY(-2px);
+     -moz-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+       -o-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+#chat:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-left: 5px solid #888;
+  border-radius: 40px;
+  height: 15px;
+  width: 15px;
+  -webkit-transform: translate(14px, 3px);
+     -moz-transform: translate(14px, 3px);
+      -ms-transform: translate(14px, 3px);
+       -o-transform: translate(14px, 3px);
+          transform: translate(14px, 3px);
 }
