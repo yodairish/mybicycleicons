@@ -1430,6 +1430,10 @@ body > div:hover {
   height: 10px;
   background-color: #888;
   -webkit-transform: translateY(6px);
+     -moz-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+       -o-transform: translateY(6px);
+          transform: translateY(6px);
 }
 #home > div:before {
   content: '';
@@ -1440,6 +1444,10 @@ body > div:hover {
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   -webkit-transform: translate(-4px, -12px);
+     -moz-transform: translate(-4px, -12px);
+      -ms-transform: translate(-4px, -12px);
+       -o-transform: translate(-4px, -12px);
+          transform: translate(-4px, -12px);
 }
 #home > div:after {
   content: '';
@@ -1448,4 +1456,55 @@ body > div:hover {
   height: 4px;
   background-color: #fff;
   -webkit-transform: translate(6px, -6px);
+     -moz-transform: translate(6px, -6px);
+      -ms-transform: translate(6px, -6px);
+       -o-transform: translate(6px, -6px);
+          transform: translate(6px, -6px);
+}
+
+/* ========================= */
+#like {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#like > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-top: 10px solid #888;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  width: 0;
+  height: 0;
+  -webkit-transform: translateY(5px);
+     -moz-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+       -o-transform: translateY(5px);
+          transform: translateY(5px);
+}
+#like > div:before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #888;
+  border-radius: 50% 70%;
+  -webkit-transform: translate(-10px, -19px);
+     -moz-transform: translate(-10px, -19px);
+      -ms-transform: translate(-10px, -19px);
+       -o-transform: translate(-10px, -19px);
+          transform: translate(-10px, -19px);
+}
+#like > div:after {
+  content: ''; display: block; width: 12px; height: 12px; background-color: #888; 
+  border-radius: 70% 50%; 
+  -webkit-transform: translate(-2px, -31px);
+     -moz-transform: translate(-2px, -31px);
+      -ms-transform: translate(-2px, -31px);
+       -o-transform: translate(-2px, -31px);
+          transform: translate(-2px, -31px);
 }
