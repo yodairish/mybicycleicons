@@ -1284,3 +1284,46 @@ body > div:hover {
        -o-transform: translate(14px, 3px);
           transform: translate(14px, 3px);
 }
+
+/* ========================= */
+#edit {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#edit:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-left: 8px solid #888;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  -webkit-transform: translate(-3px, 9px);
+     -moz-transform: translate(-3px, 9px);
+      -ms-transform: translate(-3px, 9px);
+       -o-transform: translate(-3px, 9px);
+          transform: translate(-3px, 9px);
+}
+#edit:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; 
+  width: 8px; 
+  height: 20px;
+  background-color: #888;
+  -webkit-transform: rotateZ(25deg) translateY(-4px);
+     -moz-transform: rotateZ(25deg) translateY(-4px);
+      -ms-transform: rotateZ(25deg) translateY(-4px);
+       -o-transform: rotateZ(25deg) translateY(-4px);
+          transform: rotateZ(25deg) translateY(-4px);
+}
