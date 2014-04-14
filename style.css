@@ -980,11 +980,11 @@ body > div:hover {
   left: 0;
   right: 0;
   margin: auto;
-  -webkit-transform: translate(-8px, -4px);
-     -moz-transform: translate(-8px, -4px);
-      -ms-transform: translate(-8px, -4px);
-       -o-transform: translate(-8px, -4px);
-          transform: translate(-8px, -4px);
+  -webkit-transform: translate(-10px, -4px);
+     -moz-transform: translate(-10px, -4px);
+      -ms-transform: translate(-10px, -4px);
+       -o-transform: translate(-10px, -4px);
+          transform: translate(-10px, -4px);
 }
 
 /* ========================= */
@@ -1019,9 +1019,9 @@ body > div:hover {
   left: 0;
   right: 0;
   margin: auto;
-  -webkit-transform: translate(8px, -4px);
-     -moz-transform: translate(8px, -4px);
-      -ms-transform: translate(8px, -4px);
-       -o-transform: translate(8px, -4px);
-          transform: translate(8px, -4px);
+  -webkit-transform: translate(10px, -4px);
+     -moz-transform: translate(10px, -4px);
+      -ms-transform: translate(10px, -4px);
+       -o-transform: translate(10px, -4px);
+          transform: translate(10px, -4px);
 }
