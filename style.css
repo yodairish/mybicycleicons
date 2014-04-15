@@ -1869,3 +1869,117 @@ body > div:hover {
   border-right: 8px solid #888;
   border-radius: 50%;
 }
+
+/* ========================= */
+#private {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#private:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 13px;
+  height: 13px;
+  background-color: #888;
+  border-radius: 2px;
+  -webkit-transform: translateY(2px);
+     -moz-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+       -o-transform: translateY(2px);
+          transform: translateY(2px);
+}
+#private:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 5px;
+  height: 5px;
+  border: 2px solid #888;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  -webkit-transform: translateY(-8px);
+     -moz-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+       -o-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+/* ========================= */
+#private2 {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#private2:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 14px;
+  height: 13px;
+  background-color: #888;
+  border-radius: 2px;
+  -webkit-transform: translateY(2px);
+     -moz-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+       -o-transform: translateY(2px);
+          transform: translateY(2px);
+}
+#private2:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 6px;
+  height: 5px;
+  border: 2px solid #888;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  -webkit-transform: translateY(-8px);
+     -moz-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+       -o-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+#private2 > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+#private2 > div:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 5px solid #fff;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  -webkit-transform: translate(0px, 2px);
+     -moz-transform: translate(0px, 2px);
+      -ms-transform: translate(0px, 2px);
+       -o-transform: translate(0px, 2px);
+          transform: translate(0px, 2px);
+}
