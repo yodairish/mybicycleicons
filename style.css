@@ -1729,3 +1729,122 @@ body > div:hover {
        -o-transform: translate(1px, -22px);
           transform: translate(1px, -22px);
 }
+
+/* ========================= */
+#battery {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#battery:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 7px;
+  height: 16px;
+  border: 2px solid #888;
+}
+#battery:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 7px;
+  height: 3px;
+  background-color: #888;
+  -webkit-transform: translateY(-12px);
+     -moz-transform: translateY(-12px);
+      -ms-transform: translateY(-12px);
+       -o-transform: translateY(-12px);
+          transform: translateY(-12px);
+}
+#battery > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 5px;
+  height: 4px;
+  background-color: #888;
+}
+#battery > div:before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 4px;
+  background-color: #888;
+  -webkit-transform: translateY(-5px);
+     -moz-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+       -o-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+#battery > div:after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 4px;
+  background-color: #888; 
+  -webkit-transform: translateY(1px);
+     -moz-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+       -o-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+/* ========================= */
+#print {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#print > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 25px;
+  height: 14px;
+  background-color: #888;
+  border-radius: 3px;
+}
+#print > div:before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 8px;
+  background-color: #fff;
+  border: 2px solid #888;
+  border-radius: 0 0 3px 3px;
+  -webkit-transform: translate(6px, 8px);
+     -moz-transform: translate(6px, 8px);
+      -ms-transform: translate(6px, 8px);
+       -o-transform: translate(6px, 8px);
+          transform: translate(6px, 8px);
+}
+#print > div:after {
+  content: '';
+  display: block;
+  width: 10px; 
+  height: 7px;
+  background-color: #fff;
+  border: 2px solid #888; 
+  border-bottom: none;
+  border-radius: 3px 3px 0 0; 
+  -webkit-transform: translate(6px, -21px);
+     -moz-transform: translate(6px, -21px);
+      -ms-transform: translate(6px, -21px);
+       -o-transform: translate(6px, -21px);
+          transform: translate(6px, -21px);
+}
