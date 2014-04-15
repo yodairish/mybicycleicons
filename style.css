@@ -1508,3 +1508,958 @@ body > div:hover {
        -o-transform: translate(-2px, -31px);
           transform: translate(-2px, -31px);
 }
+
+/* ========================= */
+#trash {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#trash > div:first-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 16px;
+  height: 20px;
+  background-color: #888;
+  border-radius: 0% 0% 20% 20%;
+  -webkit-transform: translateY(3px);
+     -moz-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+       -o-transform: translateY(3px);
+          transform: translateY(3px);
+}
+#trash > div:first-child:before {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 3px;
+  background-color: #888;
+  border-radius: 3px 3px 0% 0;
+  -webkit-transform: translate(-3px, -4px);
+     -moz-transform: translate(-3px, -4px);
+      -ms-transform: translate(-3px, -4px);
+       -o-transform: translate(-3px, -4px);
+          transform: translate(-3px, -4px);
+}
+#trash > div:first-child:after {
+  content: '';
+  display: block; 
+  width: 12px; 
+  height: 2px;
+  background-color: #888; 
+  border-radius: 2px 2px 0% 0; 
+  -webkit-transform: translate(2px, -10px);
+     -moz-transform: translate(2px, -10px);
+      -ms-transform: translate(2px, -10px);
+       -o-transform: translate(2px, -10px);
+          transform: translate(2px, -10px);
+}
+#trash > div:last-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 2px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-transform: translateY(2px);
+     -moz-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+       -o-transform: translateY(2px);
+          transform: translateY(2px);
+}
+#trash > div:last-child:before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 2px; 
+  -webkit-transform: translateX(4px);
+     -moz-transform: translateX(4px);
+      -ms-transform: translateX(4px);
+       -o-transform: translateX(4px);
+          transform: translateX(4px);
+}
+#trash > div:last-child:after {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 2px; 
+  -webkit-transform: translate(-4px, -15px);
+     -moz-transform: translate(-4px, -15px);
+      -ms-transform: translate(-4px, -15px);
+       -o-transform: translate(-4px, -15px);
+          transform: translate(-4px, -15px);
+}
+
+/* ========================= */
+#power {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#power:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #888;
+  border-radius: 50%;
+  border-top-color: transparent;
+}
+#power:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 3px;
+  height: 14px;
+  background-color: #888;
+  -webkit-transform: translateY(-5px);
+     -moz-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+       -o-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+/* ========================= */
+#warning {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#warning > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 2px solid #888;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+}
+#warning > div:before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 9px;
+  background-color: #888;
+  -webkit-transform: translate(8px, 7px);
+     -moz-transform: translate(8px, 7px);
+      -ms-transform: translate(8px, 7px);
+       -o-transform: translate(8px, 7px);
+          transform: translate(8px, 7px);
+}
+#warning > div:after {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #888;
+  -webkit-transform: translate(8px, -7px);
+     -moz-transform: translate(8px, -7px);
+      -ms-transform: translate(8px, -7px);
+       -o-transform: translate(8px, -7px);
+          transform: translate(8px, -7px);
+}
+
+/* ========================= */
+#folders {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#folders > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 25px;
+  height: 23px;
+  background-color: #888;
+  border-radius: 2px 2px 0 0;
+}
+#folders > div:before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 20px;
+  background-color: #aaa;
+  border-radius: 2px 2px 0 0;
+  -webkit-transform: skewX(15deg) translate(-4px, 3px);
+     -moz-transform: skewX(15deg) translate(-4px, 3px);
+      -ms-transform: skewX(15deg) translate(-4px, 3px);
+       -o-transform: skewX(15deg) translate(-4px, 3px);
+          transform: skewX(15deg) translate(-4px, 3px);
+  
+}
+#folders > div:after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 3px;
+  background-color: #888;
+  border-radius: 1px 1px 0 0;
+  -webkit-transform: translate(1px, -22px);
+     -moz-transform: translate(1px, -22px);
+      -ms-transform: translate(1px, -22px);
+       -o-transform: translate(1px, -22px);
+          transform: translate(1px, -22px);
+}
+
+/* ========================= */
+#battery {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#battery:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 7px;
+  height: 16px;
+  border: 2px solid #888;
+}
+#battery:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 7px;
+  height: 3px;
+  background-color: #888;
+  -webkit-transform: translateY(-12px);
+     -moz-transform: translateY(-12px);
+      -ms-transform: translateY(-12px);
+       -o-transform: translateY(-12px);
+          transform: translateY(-12px);
+}
+#battery > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 5px;
+  height: 4px;
+  background-color: #888;
+}
+#battery > div:before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 4px;
+  background-color: #888;
+  -webkit-transform: translateY(-5px);
+     -moz-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+       -o-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+#battery > div:after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 4px;
+  background-color: #888; 
+  -webkit-transform: translateY(1px);
+     -moz-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+       -o-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+/* ========================= */
+#print {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#print > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 25px;
+  height: 14px;
+  background-color: #888;
+  border-radius: 3px;
+}
+#print > div:before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 8px;
+  background-color: #fff;
+  border: 2px solid #888;
+  border-radius: 0 0 3px 3px;
+  -webkit-transform: translate(6px, 8px);
+     -moz-transform: translate(6px, 8px);
+      -ms-transform: translate(6px, 8px);
+       -o-transform: translate(6px, 8px);
+          transform: translate(6px, 8px);
+}
+#print > div:after {
+  content: '';
+  display: block;
+  width: 10px; 
+  height: 7px;
+  background-color: #fff;
+  border: 2px solid #888; 
+  border-bottom: none;
+  border-radius: 3px 3px 0 0; 
+  -webkit-transform: translate(6px, -21px);
+     -moz-transform: translate(6px, -21px);
+      -ms-transform: translate(6px, -21px);
+       -o-transform: translate(6px, -21px);
+          transform: translate(6px, -21px);
+}
+
+/* ========================= */
+#print {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#showpass:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 10px;
+  height: 9px;
+  border-left: 8px solid #888;
+  border-right: 8px solid #888;
+  border-radius: 50%;
+}
+#showpass:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 2px;
+  height: 3px;
+  border: 2px solid #888;
+  border-radius: 50%;
+}
+
+/* ========================= */
+#private {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#private:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 13px;
+  height: 13px;
+  background-color: #888;
+  border-radius: 2px;
+  -webkit-transform: translateY(2px);
+     -moz-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+       -o-transform: translateY(2px);
+          transform: translateY(2px);
+}
+#private:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 5px;
+  height: 5px;
+  border: 2px solid #888;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  -webkit-transform: translateY(-8px);
+     -moz-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+       -o-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+/* ========================= */
+#private2 {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#private2:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 14px;
+  height: 13px;
+  background-color: #888;
+  border-radius: 2px;
+  -webkit-transform: translateY(2px);
+     -moz-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+       -o-transform: translateY(2px);
+          transform: translateY(2px);
+}
+#private2:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 6px;
+  height: 5px;
+  border: 2px solid #888;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  -webkit-transform: translateY(-8px);
+     -moz-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+       -o-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+#private2 > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+#private2 > div:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 5px solid #fff;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  -webkit-transform: translate(0px, 2px);
+     -moz-transform: translate(0px, 2px);
+      -ms-transform: translate(0px, 2px);
+       -o-transform: translate(0px, 2px);
+          transform: translate(0px, 2px);
+}
+
+/* ========================= */
+#location {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#location:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #888;
+  border-radius: 50%;
+}
+#location:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 2px;
+  height: 8px;
+  background-color: #888;
+  -webkit-transform: translateY(-8px);
+     -moz-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+       -o-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+#location > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 2px;
+  height: 8px;
+  background-color: #888;
+  -webkit-transform: translateY(8px);
+     -moz-transform: translateY(8px);
+      -ms-transform: translateY(8px);
+       -o-transform: translateY(8px);
+          transform: translateY(8px);
+}
+#location > div:before {
+  content: '';
+  display: block;
+  width: 8px; 
+  height: 2px;
+  background-color: #888; 
+  -webkit-transform: translate(-11px, -5px);
+     -moz-transform: translate(-11px, -5px);
+      -ms-transform: translate(-11px, -5px);
+       -o-transform: translate(-11px, -5px);
+          transform: translate(-11px, -5px);
+}
+#location > div:after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 2px;
+  background-color: #888; 
+  -webkit-transform: translate(5px, -7px);
+     -moz-transform: translate(5px, -7px);
+      -ms-transform: translate(5px, -7px);
+       -o-transform: translate(5px, -7px);
+          transform: translate(5px, -7px);
+}
+
+/* ========================= */
+#star {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#star > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #888;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform: rotateZ(35deg);
+     -moz-transform: rotateZ(35deg);
+      -ms-transform: rotateZ(35deg);
+       -o-transform: rotateZ(35deg);
+          transform: rotateZ(35deg);
+}
+#star > div:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #888;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform: rotateZ(-70deg) translate(-4px, -10px);
+     -moz-transform: rotateZ(-70deg) translate(-4px, -10px);
+      -ms-transform: rotateZ(-70deg) translate(-4px, -10px);
+       -o-transform: rotateZ(-70deg) translate(-4px, -10px);
+          transform: rotateZ(-70deg) translate(-4px, -10px);
+}
+#star > div:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #888;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  -webkit-transform: rotateZ(-35deg) translate(1px, -13px);
+     -moz-transform: rotateZ(-35deg) translate(1px, -13px);
+      -ms-transform: rotateZ(-35deg) translate(1px, -13px);
+       -o-transform: rotateZ(-35deg) translate(1px, -13px);
+          transform: rotateZ(-35deg) translate(1px, -13px);
+}
+
+/* ========================= */
+#emptystar {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#emptystar > div:first-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #888;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform: rotateZ(35deg);
+     -moz-transform: rotateZ(35deg);
+      -ms-transform: rotateZ(35deg);
+       -o-transform: rotateZ(35deg);
+          transform: rotateZ(35deg);
+}
+#emptystar > div:first-child:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #888;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform: rotateZ(-70deg) translate(-4px, -10px);
+     -moz-transform: rotateZ(-70deg) translate(-4px, -10px);
+      -ms-transform: rotateZ(-70deg) translate(-4px, -10px);
+       -o-transform: rotateZ(-70deg) translate(-4px, -10px);
+          transform: rotateZ(-70deg) translate(-4px, -10px);
+}
+#emptystar > div:first-child:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #888;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  -webkit-transform: rotateZ(-35deg) translate(1px, -13px);
+     -moz-transform: rotateZ(-35deg) translate(1px, -13px);
+      -ms-transform: rotateZ(-35deg) translate(1px, -13px);
+       -o-transform: rotateZ(-35deg) translate(1px, -13px);
+          transform: rotateZ(-35deg) translate(1px, -13px);
+}
+#emptystar > div:last-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform: rotateZ(35deg) scale(0.7);
+     -moz-transform: rotateZ(35deg) scale(0.7);
+      -ms-transform: rotateZ(35deg) scale(0.7);
+       -o-transform: rotateZ(35deg) scale(0.7);
+          transform: rotateZ(35deg) scale(0.7);
+}
+#emptystar > div:last-child:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform: rotateZ(-70deg) translate(-4px, -10px);
+     -moz-transform: rotateZ(-70deg) translate(-4px, -10px);
+      -ms-transform: rotateZ(-70deg) translate(-4px, -10px);
+       -o-transform: rotateZ(-70deg) translate(-4px, -10px);
+          transform: rotateZ(-70deg) translate(-4px, -10px);
+}
+#emptystar > div:last-child:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #fff;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  -webkit-transform: rotateZ(-35deg) translate(1px, -13px);
+     -moz-transform: rotateZ(-35deg) translate(1px, -13px);
+      -ms-transform: rotateZ(-35deg) translate(1px, -13px);
+       -o-transform: rotateZ(-35deg) translate(1px, -13px);
+          transform: rotateZ(-35deg) translate(1px, -13px);
+}
+
+/* ========================= */
+#basket {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#basket > div:first-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 15px;
+  height: 3px;
+  background-color: #888;
+  -webkit-transform: translate(2px, 4px);
+     -moz-transform: translate(2px, 4px);
+      -ms-transform: translate(2px, 4px);
+       -o-transform: translate(2px, 4px);
+          transform: translate(2px, 4px);
+}
+#basket > div:first-child:before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 15px;
+  background-color: #888;
+  -webkit-transform: translate(-3px, -12px) rotateZ(-20deg);
+     -moz-transform: translate(-3px, -12px) rotateZ(-20deg);
+      -ms-transform: translate(-3px, -12px) rotateZ(-20deg);
+       -o-transform: translate(-3px, -12px) rotateZ(-20deg);
+          transform: translate(-3px, -12px) rotateZ(-20deg);
+}
+#basket > div:first-child:after {
+  content: '';
+  display: block;
+  width: 3px; 
+  height: 15px;
+  background-color: #888; 
+  -webkit-transform: translate(15px, -27px) rotateZ(20deg);
+     -moz-transform: translate(15px, -27px) rotateZ(20deg);
+      -ms-transform: translate(15px, -27px) rotateZ(20deg);
+       -o-transform: translate(15px, -27px) rotateZ(20deg);
+          transform: translate(15px, -27px) rotateZ(20deg);
+}
+#basket > div:last-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #888;
+  -webkit-transform: translate(-3px, 10px);
+     -moz-transform: translate(-3px, 10px);
+      -ms-transform: translate(-3px, 10px);
+       -o-transform: translate(-3px, 10px);
+          transform: translate(-3px, 10px);
+}
+#basket > div:last-child:before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #888;
+  border-radius: 50%;
+  -webkit-transform: translateX(10px);
+     -moz-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+       -o-transform: translateX(10px);
+          transform: translateX(10px);
+}
+#basket > div:last-child:after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 3px;
+  background-color: #888;
+  -webkit-transform: translate(-10px, -22px);
+     -moz-transform: translate(-10px, -22px);
+      -ms-transform: translate(-10px, -22px);
+       -o-transform: translate(-10px, -22px);
+          transform: translate(-10px, -22px);
+}
+
+/* ========================= */
+#social {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#social > div:first-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 25px;
+  height: 7px;
+  z-index: 2;
+  background-color: #aaa;
+  border-radius: 50% 50% 0% 0%;
+  -webkit-transform: translate(-4px, 10px);
+}
+#social > div:first-child:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #aaa;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  -webkit-transform: translate(7px, -9px);
+}
+#social > div:first-child:after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 17px;
+  background-color: #aaa;
+  border-radius: 40% 40% 50% 50%;
+  -webkit-transform: translate(6px, -28px);
+}
+#social > div:last-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 25px;
+  height: 7px;
+  z-index: 1;
+  background-color: #888;
+  border-radius: 50% 50% 0% 0%;
+  -webkit-transform: translate(5px, 7px) scale(0.8);
+}
+#social > div:last-child:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #888;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  -webkit-transform: translate(7px, -9px);
+}
+#social > div:last-child:after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 17px;
+  background-color: #888;
+  border-radius: 40% 40% 50% 50%;
+  -webkit-transform: translate(6px, -28px);
+}
+
+/* ========================= */
+#settings {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#settings:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 4px solid #888;
+}
+#settings > div:first-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 7px;
+  height: 5px;
+  background-color: #888;
+  -webkit-transform: translateY(-10px);
+}
+#settings > div:first-child:before {
+  content: '';
+  display: block;
+  width: 7px; 
+  height: 5px;
+  background-color: #888; 
+  -webkit-transform: translate(9px, 5px) rotateZ(60deg);
+}
+#settings > div:first-child:after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 5px;
+  background-color: #888; 
+  -webkit-transform: translate(9px, 10px) rotateZ(120deg);
+}
+#settings > div:last-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 7px; 
+  height: 5px;
+  background-color: #888; 
+  -webkit-transform: translateY(10px);
+}
+#settings > div:last-child:before {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 5px;
+  background-color: #888; 
+  -webkit-transform: translate(-9px, -5px) rotateZ(-120deg);
+}
+#settings > div:last-child:after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 5px;
+  background-color: #888; 
+  -webkit-transform: translate(-9px, -20px) rotateZ(-60deg);
+}
