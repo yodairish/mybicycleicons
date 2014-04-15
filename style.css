@@ -2126,3 +2126,102 @@ body > div:hover {
        -o-transform: rotateZ(-35deg) translate(1px, -13px);
           transform: rotateZ(-35deg) translate(1px, -13px);
 }
+
+/* ========================= */
+#emptystar {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#emptystar > div:first-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #888;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform: rotateZ(35deg);
+     -moz-transform: rotateZ(35deg);
+      -ms-transform: rotateZ(35deg);
+       -o-transform: rotateZ(35deg);
+          transform: rotateZ(35deg);
+}
+#emptystar > div:first-child:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #888;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform: rotateZ(-70deg) translate(-4px, -10px);
+     -moz-transform: rotateZ(-70deg) translate(-4px, -10px);
+      -ms-transform: rotateZ(-70deg) translate(-4px, -10px);
+       -o-transform: rotateZ(-70deg) translate(-4px, -10px);
+          transform: rotateZ(-70deg) translate(-4px, -10px);
+}
+#emptystar > div:first-child:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #888;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  -webkit-transform: rotateZ(-35deg) translate(1px, -13px);
+     -moz-transform: rotateZ(-35deg) translate(1px, -13px);
+      -ms-transform: rotateZ(-35deg) translate(1px, -13px);
+       -o-transform: rotateZ(-35deg) translate(1px, -13px);
+          transform: rotateZ(-35deg) translate(1px, -13px);
+}
+#emptystar > div:last-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform: rotateZ(35deg) scale(0.7);
+     -moz-transform: rotateZ(35deg) scale(0.7);
+      -ms-transform: rotateZ(35deg) scale(0.7);
+       -o-transform: rotateZ(35deg) scale(0.7);
+          transform: rotateZ(35deg) scale(0.7);
+}
+#emptystar > div:last-child:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform: rotateZ(-70deg) translate(-4px, -10px);
+     -moz-transform: rotateZ(-70deg) translate(-4px, -10px);
+      -ms-transform: rotateZ(-70deg) translate(-4px, -10px);
+       -o-transform: rotateZ(-70deg) translate(-4px, -10px);
+          transform: rotateZ(-70deg) translate(-4px, -10px);
+}
+#emptystar > div:last-child:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #fff;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  -webkit-transform: rotateZ(-35deg) translate(1px, -13px);
+     -moz-transform: rotateZ(-35deg) translate(1px, -13px);
+      -ms-transform: rotateZ(-35deg) translate(1px, -13px);
+       -o-transform: rotateZ(-35deg) translate(1px, -13px);
+          transform: rotateZ(-35deg) translate(1px, -13px);
+}
