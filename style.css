@@ -1848,3 +1848,24 @@ body > div:hover {
        -o-transform: translate(6px, -21px);
           transform: translate(6px, -21px);
 }
+
+/* ========================= */
+#print {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#showpass:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 10px;
+  height: 9px;
+  border-left: 8px solid #888;
+  border-right: 8px solid #888;
+  border-radius: 50%;
+}
